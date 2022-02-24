@@ -1,0 +1,159 @@
+/*
+Need to add:
+font-familys n font-size to each text
+
+fix the about me texts
+
+make changes for anchor links (love hate)
+maybe make about section go from 3 to 1 when shrunk.
+*/
+
+/* made my background a dark color*/
+body{
+    background-color: #020b29;
+    
+   
+}
+
+/* brighter blue so the header pops
+margin is set to auto so the elements stay evenly centered
+padding to give extra custions
+width to 100 so the blue goes across the whole page */
+header{
+    background-color: #28C2FF;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    font-family: Geneva, Tahoma, sans-serif;
+    
+    text-align: center;
+    color: #fffefa;
+}
+
+
+/*  added padding and margin to give my name and discipline more space.*/
+.heading{
+   
+    padding: 10px 0px 10px 0px;
+    margin: 10px;
+    
+}
+
+/*making the header elements stand out more*/
+.discipline,
+.name{
+    background-color: #020b29;
+    margin: auto;
+    width: 45%;
+    border-radius: 25px;
+}
+
+/*couldn't get the two elements to seperate so this was my solution*/
+.discipline{
+    margin-top: 15px;
+}
+
+img{
+    padding: 15px; /*add a little space from the header*/
+    width: 25%;
+    border-radius: 50%; /*wanted a circle picture*/
+    height: auto; /*wanted height to automatically adjust if screen width shortened*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /*used these above three to center*/
+}
+
+.introduction{
+    text-align: center;
+    color: #fffefa;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+
+/*used LoveHate method to customize the links a bit and added transition for smoother change*/
+a:link{
+    color:#28C2FF;
+}
+
+a:visited{
+    color: #035e81;
+}
+
+a:hover{
+    color:#fffefa;
+    transition: .4s;
+}
+
+a:active{
+    color: palevioletred;
+}
+
+
+
+   /*for the bullets to be closer to the statements*/  
+.list{
+    list-style-position: inside;
+}
+
+/*customized hr so it didn't span the whole page*/
+hr{
+    height: 1px;
+    background-color: #fffefa;
+    border: none;
+    width: 80%;
+    margin: auto;
+}
+
+
+.about-section{
+    text-align: center;
+    color: #fffefa;
+    width: 80%; /*didn't want this longer wider than hr*/
+   display: flex;  /*to get three sections side by side*/
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 30px; /*wanted a little extra space before next hr*/
+    font-size: 1rem;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+
+h3{
+    color:#fffefa;
+    text-align: center;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size: 20px; /*felt like h3s were a tad too small*/
+
+} 
+
+/*border for the about paragraphs*/
+.about-left,
+.about-center,
+.about-right{
+    border: solid 1px #0b0bd3;
+    margin: 15px 15px 15px 15px;
+    padding: 15px;
+    border-radius: 10%;
+}
+
+.contact-info{
+    text-align: center;
+    list-style-position: inside;
+    color: #fffefa;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+    
+
+footer{
+    font-family: Geneva, verdana, sans-serif;
+    text-align: center;
+    height: 30px;
+    background-color: #28C2FF;
+    color: #fffefa;
+    /*used the two methods below to fix the footer to the very bottom*/
+    position: relative;
+    bottom: 0;
+    
+}
+
+
